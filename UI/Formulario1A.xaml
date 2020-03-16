@@ -25,5 +25,28 @@
             <RowDefinition Height="50"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
+        
+        <Button x:Name="BuscarButton" Click="NuevoButton_Click" Content="Buscar" Grid.Column="3" Grid.Row="0"   HorizontalContentAlignment="Right">
+            <Button.Background>
+                <ImageBrush ImageSource="/Resources/Buscar.png" Stretch="Uniform" AlignmentX="Left" />
+            </Button.Background>
+        </Button>
+
+        <Button x:Name="NuevoButton" Click="NuevoButton_Click" Content="Nuevo" Grid.Column="0" Grid.Row="5"   HorizontalContentAlignment="Right">
+            <Button.Background>
+                <ImageBrush ImageSource="/Resources/nuevo.png" Stretch="Uniform" AlignmentX="Left" />
+            </Button.Background>
+        </Button>
+        <Button x:Name="GuardarButton" Click="NuevoButton_Click" Content="Guardar" Grid.Column="1" Grid.Row="5"   HorizontalContentAlignment="Right">
+            <Button.Background>
+                <ImageBrush ImageSource="/Resources/guardar.png" Stretch="Uniform" AlignmentX="Left" />
+            </Button.Background>
+        </Button>
+        <Button x:Name="EliminarButton" Click="NuevoButton_Click" Content="Eliminar" Grid.Column="3" Grid.Row="5"   HorizontalContentAlignment="Right">
+            <Button.Background>
+                <ImageBrush ImageSource="/Resources/eliminar.png" Stretch="Uniform" AlignmentX="Left" />
+            </Button.Background>
+        </Button>
     </Grid>
+    
 </Window>

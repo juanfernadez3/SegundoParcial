@@ -21,5 +21,7 @@ namespace SegundoParcial.UI
         {
             InitializeComponent();
         }
+
+        
     }
 }
