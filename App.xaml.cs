@@ -13,5 +13,10 @@ namespace SegundoParcial
     /// </summary>
     public partial class App : Application
     {
+        private void Application_DispatcherUnhandledException(object sender, System.Windows.Threading.DispatcherUnhandledExceptionEventArgs e)
+        {
+            MessageBox.Show($"Ha ocurrido un problema {e.Exception.Message}");
+            e.Handled = true;
+        }
     }
 }

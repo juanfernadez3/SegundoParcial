@@ -7,6 +7,9 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-
+        <Menu>
+            <MenuItem x:Name="RegistrarLlamada" Header="Registrar" Click="RegistrarLlamada_Click" FontSize="20" FontWeight="Bold"/>
+            <MenuItem x:Name="ConsultarLlamada" Header="Consultar" Click="ConsultarLlamada_Click" FontSize="20" FontWeight="Bold"/>
+        </Menu>
     </Grid>
 </Window>

@@ -1,13 +1,14 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Text;
-using System.ComponentModel.DataAnnotations;
-using Microsoft.EntityFrameworkCore;
+using SegundoParcial.Entidades;
 
-namespace RegistroDetalleOrden.DAL
+namespace SegundoParcial.Dal
 {
     public class Contexto : DbContext
     {
+        public DbSet<Llamadas> Llamadas { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

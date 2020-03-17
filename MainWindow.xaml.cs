@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using SegundoParcial.UI.Registros;
+using SegundoParcial.UI.Consultas;
 
 namespace SegundoParcial
 {
@@ -23,6 +25,18 @@ namespace SegundoParcial
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void RegistrarLlamada_Click(object sender, RoutedEventArgs e)
+        {
+            FormularioLlamada fl = new FormularioLlamada();
+            fl.Show();
+        }
+
+        private void ConsultarLlamada_Click(object sender, RoutedEventArgs e)
+        {
+            FormularioConsulta fc = new FormularioConsulta();
+            fc.Show();
         }
     }
 }

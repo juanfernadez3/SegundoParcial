@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Data\SegundoParcialDb-shm" />
     <None Remove="Resources\buscar.png" />
     <None Remove="Resources\eliminar.png" />
     <None Remove="Resources\guardar.png" />
@@ -38,9 +39,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="BLL\" />
     <Folder Include="Data\" />
-    <Folder Include="Entidades\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -56,6 +55,12 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Data\SegundoParcialDb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>
